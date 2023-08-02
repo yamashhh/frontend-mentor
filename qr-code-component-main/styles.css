@@ -21,12 +21,9 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  grid-template-columns: 1fr;
-  row-gap: 8px;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   min-height: 100svh;
   padding-inline: 24px;
   background-color: var(--color-light-gray);
