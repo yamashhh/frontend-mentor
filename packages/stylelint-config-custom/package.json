@@ -1,0 +1,17 @@
+{
+  "name": "stylelint-config-custom",
+  "version": "0.0.0",
+  "main": "index.mjs",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Add dev script here'",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "devDependencies": {
+    "stylelint": "^15.10.2",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-standard": "^35.0.0"
+  }
+}

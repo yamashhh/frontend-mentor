@@ -35,8 +35,7 @@ article {
   align-items: center;
   width: 100%;
   max-width: 320px;
-  padding-block-start: 16px;
-  padding-block-end: 40px;
+  padding-block: 16px 40px;
   padding-inline: 16px;
   text-align: center;
   background-color: var(--color-white);
