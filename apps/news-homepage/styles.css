@@ -99,10 +99,54 @@ a {
   justify-content: space-between;
 }
 
+.hamburger-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  justify-content: flex-end;
+  width: 100svw;
+  height: 100svh;
+
+  /* @see
+  https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix
+  https://stackoverflow.com/a/71098929
+  */
+  background-color: color-mix(in srgb, var(--dark-space-blue) 50%, transparent);
+
+  > .button {
+    all: unset;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  > .list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 256px;
+    padding-block-start: 144px;
+    padding-inline: 24px;
+    font-size: calc(18rem / 16);
+    line-height: calc(24rem / 16);
+    color: var(--dark-space-blue);
+    list-style: none;
+    background-color: var(--almost-white);
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
   row-gap: 64px;
+  padding-block-start: 32px;
 }
 
 .main-article {

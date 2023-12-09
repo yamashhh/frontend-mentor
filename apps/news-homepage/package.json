@@ -1,5 +1,5 @@
 {
-  "name": "news-homepage-main",
+  "name": "news-homepage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "stylelint": "^15.10.2",
-    "stylelint-config-custom": "workspace:*"
+    "stylelint-config-custom": "workspace:*",
+    "typescript": "^5.3.3"
   }
 }

@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
+    <script src="./dist/index.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -39,7 +40,11 @@
           <title>News homepage</title>
         </svg>
       </h1>
-      <button aria-label="Open main navigation menu.">
+      <button
+        id="hamburger-button"
+        class="hamburger-button"
+        aria-label="Open main navigation menu."
+      >
         <svg
           width="40"
           height="17"
@@ -47,9 +52,9 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="Group">
-            <rect id="Rectangle" width="40" height="3" fill="#00001A" />
-            <rect id="Rectangle_2" y="7" width="40" height="3" fill="#00001A" />
+          <g>
+            <rect width="40" height="3" fill="#00001A" />
+            <rect y="7" width="40" height="3" fill="#00001A" />
             <rect
               id="Rectangle_3"
               y="14"
@@ -61,8 +66,40 @@
           </g>
         </svg>
       </button>
-      <nav>
-        <ul>
+      <nav id="main-navigation" class="main-navigation">
+        <button
+          id="close-button"
+          class="button"
+          aria-label="Close main navigation menu."
+        >
+          <svg
+            width="32"
+            height="31"
+            viewBox="0 0 32 31"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect
+                x="2.91846"
+                y="0.297211"
+                width="40"
+                height="3"
+                transform="rotate(45 2.91846 0.297211)"
+                fill="#00001A"
+              />
+              <rect
+                x="0.797363"
+                y="28.5815"
+                width="40"
+                height="3"
+                transform="rotate(-45 0.797363 28.5815)"
+                fill="#00001A"
+              />
+            </g>
+          </svg>
+        </button>
+        <ul class="list">
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
           <li><a href="#">Popular</a></li>
