@@ -1,5 +1,5 @@
 {
-  "name": "news-homepage-main",
+  "name": "news-homepage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^3.0.0",
     "stylelint": "^15.10.2",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-custom": "workspace:*",
+    "typescript": "^5.3.3"
   }
 }
