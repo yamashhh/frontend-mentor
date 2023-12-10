@@ -1,3 +1,5 @@
+const OPEN_CLASS = "-open";
+
 document.addEventListener("DOMContentLoaded", () => {
   const mainNavigation =
     document.querySelector<HTMLElement>("#main-navigation");
@@ -5,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
   document.querySelector("#hamburger-button")?.addEventListener("click", () => {
-    mainNavigation.style.display = "flex";
+    mainNavigation.classList.add(OPEN_CLASS);
   });
   document.querySelector("#close-button")?.addEventListener("click", () => {
-    mainNavigation.style.display = "none";
+    mainNavigation.classList.remove(OPEN_CLASS);
   });
 });
