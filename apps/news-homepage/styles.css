@@ -179,6 +179,10 @@ a {
       line-height: calc(26rem / 16);
       color: var(--gunmetal);
     }
+
+    > .item:hover {
+      color: var(--light-vermillion);
+    }
   }
 }
 
@@ -262,6 +266,10 @@ a {
     color: var(--almost-white);
     letter-spacing: calc(4.375rem / 16);
     background-color: var(--light-vermillion);
+
+    &:hover {
+      background-color: var(--dark-space-blue);
+    }
   }
 }
 
@@ -316,6 +324,10 @@ a {
       color: var(--silver);
     }
   }
+
+  &:hover > .article > .heading {
+    color: var(--yellow);
+  }
 }
 
 .section-popular {
@@ -356,6 +368,7 @@ a {
       object-fit: cover;
     }
 
+    /* stylelint-disable-next-line no-descending-specificity */
     > .heading {
       grid-area: 1 / 2 / 2 / 3;
       font-size: calc(18rem / 16);
@@ -379,5 +392,9 @@ a {
       line-height: calc(26rem / 16);
       color: var(--gunmetal);
     }
+  }
+
+  &:hover > .article > .heading {
+    color: var(--light-vermillion);
   }
 }
