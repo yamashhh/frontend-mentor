@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "stylelint": "^15.10.2",
+    "stylelint": "^16.0.0",
     "stylelint-config-custom": "workspace:*",
     "typescript": "^5.3.3"
   }
